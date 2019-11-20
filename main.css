@@ -54,7 +54,7 @@ h2 {
     font-size: 12px;
 }
 
-@media screen and (min-width: 200px) and (max-width: 700px) { 
+@media screen and (min-width: 300px) and (max-width: 700px) { 
     #ham-nav label {
         display: inline-block;
         color: black;
@@ -83,7 +83,7 @@ h2 {
     header{
         padding-left: 0%;
     }
-    .about-me {
+    #about-me {
         margin-top: 30px;
         font-size: 16px;
         padding-right: 50px;
@@ -123,17 +123,30 @@ h2 {
 }
 
 @media screen and (min-width: 701px) and (max-width: 1023px) {
-    h1 {
-        padding-left: 100px;
-        margin-top: 0%;
-        text-align: left;
-        font-size: 28px;
-    }
-    #ham-nav ul li a:hover {
-        color: red;
+    #ham-nav label {
+        display: inline-block;
+        color: black;
+        background: white;
+        font-size: 10px;
+        padding: 10px;
+        cursor: pointer;
     }
     #ham-nav ul li {
-        padding-left: 100px;
+        display: block;
+        border-top: 1px solid black;
+    }
+    #ham-nav ul {
+        display: none;
+    }
+    #ham-nav input:checked ~ ul {
+        display: block;
+    }
+    h1 {
+        margin-top: 0%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
     }
     #about-me {
         margin-top: 45px;
