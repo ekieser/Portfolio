@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio site of Ethan Kieser, Fullstack Developer.">
+    <link rel="stylesheet" href="main.css">
+    <title>E.Kieser Portfolio</title>
+</head>
+<body>
+    <header role="banner">
+    <h1>Ethan Kieser<br>Fullstack Developer</h1>
+    <nav role="navigation" id="ham-nav">
+        <label for="ham-menu">&#9776;</label>
+        <input type="checkbox" id="ham-menu"/>
+          <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects-page">Projects</a></li>
+          <li><a href="mailto:ethankieser@gmail.com">Email Me</a></li>
+          <li><a href="https://github.com/ekieser" target="_blank">Github</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main role="introduction">
+       <p role="bio" id="about-me">Bio goes here<br>bio<br>bio<br>bio<br>bio</p> 
+       <ul role="contact" class="first-contact">
+            <li><a href="mailto:ethankieser@gmail.com">Email Me</a></li>
+            <li><a href="https://github.com/ekieser" target="_blank">Github</a></li>
+       </ul>
+    </main>
+    <section role="projects" id="projects-page">
+        <h2 id="project-title">Projects</h2>
+        <div id="history-quiz" class="hide">
+            <h3>US History Quiz</h3>
+            <p class="screenshot">Screenshot Here</p>
+            <p>A short quiz application I made using HTML, CSS, Javascript and JQuery.</p>
+            <a href="https://ekieser.github.io/US-History-Quiz/" target="_blank"><p>Link to live site</p></a>
+            <a href="https://github.com/ekieser/US-History-Quiz" target="_blank"><p>Link to Github repository</p></a>
+        </div>
+    </section>
+    <footer role="footer" class="bottom-contact">
+       <a href="mailto:ethankieser@gmail.com"><p>Contact me</p></a> 
+        <a href="https://github.com/ekieser" target="_blank"><p>Github</p></a>
+    </footer>
+</body>
+</html>
