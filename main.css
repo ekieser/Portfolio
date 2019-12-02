@@ -15,38 +15,59 @@ body {
 header {
     color: whitesmoke;
     font-family: 'Quattrocento', serif;
-    border-bottom: 1px solid black;
     background-color: rgb(25, 36, 48);
+    padding-left: 0%;
+}
+
+#ham-nav label {
+    display: inline-block;
+    color: white;
+    background-color: rgb(52, 74, 99);
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#ham-nav ul li {
+    display: block;
+    font-size: 17px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+#ham-nav ul {
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 10px;
+    display: none;
+    background-color: rgb(46, 46, 46);
+}
+
+#ham-nav input:checked ~ ul {
+    display: block;
 }
 
 #ham-nav {
     width: 100%;
-    background: rgb(46, 46, 46);
+    background-color: rgb(46, 46, 46);
 }
   
-#ham-nav label, #ham-menu {
-    display: none;
-}
-
-#ham-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0; 
-}
-
-#ham-nav ul li {
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
 #ham-nav ul li a {
     color: white;
     text-decoration: none;
 }
 
+#ham-menu {
+    display: none;
+}
+
 h1 {
     padding-top: 10px;
+    margin-top: 0%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
 }
 
 footer {
@@ -68,116 +89,74 @@ h2 {
 }
 
 #about-me {
-    margin-top: 25px;
-    font-size: 12px;
-}
-
-div.gallery:hover {
-    -ms-transform: scale(1.01);
-    -webkit-transform: scale(1.01);
-    transform: scale(1.01); 
+    margin-top: 30px;
+    font-size: 17px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .screenshot {
-    max-width: 100%;
-    height: auto; 
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about-me a {
     color: black;
 }
 
-
-@media screen and (min-width: 300px) and (max-width: 700px) { 
-    #ham-nav label {
-        display: inline-block;
-        color: black;
-        background: white;
-        font-size: 10px;
-        padding: 10px;
-        cursor: pointer;
-    }
-    #ham-nav ul li {
-        display: block;
-        border-top: 1px solid black;
-    }
-    #ham-nav ul {
-        display: none;
-    }
-    #ham-nav input:checked ~ ul {
-        display: block;
-    }
-    h1 {
-        margin-top: 0%;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-    }
-    header{
-        padding-left: 0%;
-    }
-    #about-me {
-        margin-top: 30px;
-        font-size: 14px;
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-    .bottom-contact {
-        margin-top: 55%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    #history-quiz {
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-    #project-title {
-        text-indent: 50px;
-        margin-top: 10%;
-        width: 100%;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    .screenshot {
-        border: 1px solid black;
-        width: 250px;
-        height: 250px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.bottom-contact {
+    margin-top: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ 
+#history-quiz {
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 17px;
 }
 
-@media screen and (min-width: 701px) and (max-width: 1299px) {
-    #ham-nav label {
-        display: inline-block;
-        color: black;
-        background: white;
-        font-size: 10px;
-        padding: 10px;
-        cursor: pointer;
-    }
-    #ham-nav ul li {
-        display: block;
-        border-top: 1px solid black;
-    }
-    #ham-nav ul {
-        display: none;
-    }
-    #ham-nav input:checked ~ ul {
-        display: block;
-    }
+#project-title {
+    text-indent: 50px;
+    margin-top: 10%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+footer a:hover {
+    color: rgb(23, 189, 255);
+}
+#about-me a:hover {
+    color: rgb(23, 189, 255);
+}
+div.gallery:hover {
+    -ms-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01); 
+}
+#ham-nav ul li a:hover {
+    color: rgb(23, 189, 255);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 701px) {
     h1 {
         margin-top: 0%;
         display: block;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
+    }
+    #ham-nav ul li {
+        font-size: 19px;
     }
     #about-me {
         margin-top: 45px;
-        font-size: 16px;
+        font-size: 19px;
         padding-right: 100px;
         padding-left: 100px;
     }
@@ -197,6 +176,8 @@ div.gallery:hover {
     #history-quiz {
         padding-right: 100px;
         padding-left: 100px;
+        font-size: 19px;
+        white-space: nowrap;
     }
     #project-title {
         text-indent: 100px;
@@ -214,11 +195,20 @@ div.gallery:hover {
         text-align: left;
         font-size: 36px;
     }
-    #ham-nav ul li a:hover {
-        color: rgb(23, 189, 255);
-    }
     #ham-nav ul li {
+        display: inline-block;
+        padding: 10px;
+        box-sizing: border-box;
         padding-left: 100px;
+    }
+    #ham-nav label {
+        display: none;
+    }
+    #ham-nav ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0; 
     }
     h2 {
         margin-top: 10px;
@@ -233,9 +223,11 @@ div.gallery:hover {
     #projects-page {
         margin-top: 16%;
         font-size: 20px;
-        text-indent: 100px;
     }
     #project-title {
+        text-indent: 100px;
+        margin-top: 10%;
+        width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -248,18 +240,15 @@ div.gallery:hover {
     .screenshot {
         float: right;
         border: 1px solid black;
-        width: 650px;
-        height: 400px;
+        width: 40%;
+        height: auto;
         margin-right: 15%;
     }
     #history-quiz {
         font-size: 19px;
-    }
-    footer a:hover {
-        color: rgb(23, 189, 255);
-    }
-    #about-me a:hover {
-        color: rgb(23, 189, 255);
+        padding-right: 100px;
+        padding-left: 100px;
+        white-space: nowrap;
     }
 }
 
