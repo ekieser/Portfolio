@@ -5,55 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Portfolio site of Ethan Kieser, Full Stack Developer.">
-    <link href="https://fonts.googleapis.com/css?family=Fanwood+Text&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>E.Kieser Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link rel="manifest" href="images/site.webmanifest">
+    <title>Ethan Kieser</title>
 </head>
 <body>
     <header role="banner">
-    <h1>Ethan Kieser<br>Full Stack Developer</h1>
-    <nav role="navigation" id="ham-nav">
-        <label for="ham-menu">&#9776;</label>
-        <input type="checkbox" id="ham-menu"/>
-        <ul>
-          <li><a href="#projects-page">Projects</a></li>
-          <li><a href="mailto:ethankieser@gmail.com">Contact</a></li>
-          <li><a href="https://github.com/ekieser" target="_blank">Github</a></li>
-          <li><a href="https://www.linkedin.com/in/ethan-kieser-b76001134/" target="_blank">LinkedIn</a></li>
-        </ul>
-    </nav>
+        <div id="banner-top">
+            <h1 id="name">Ethan Kieser</h1>
+            <h2><br>Fullstack Developer</h2>
+            <a href="mailto:ethankieser@gmail.com">Email</a>
+            <a href="https://discordapp.com/channels/@ekieser#6732" target="_blank">Discord</a>
+            <a href="https://www.linkedin.com/in/ethankieser/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/ekieser" target="_blank">Github</a>
+        </div>
+        <nav role="navigation" id="ham-nav">
+            <label for="ham-menu">&#9776;</label>
+            <input type="checkbox" id="ham-menu"/>
+            <ul>
+                <li><a href="mailto:ethankieser@gmail.com">Email</a></li>
+                <li><a href="https://github.com/ekieser" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/ethan-kieser-b76001134/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
     </header>
     <main role="main">
-       <p id="about-me">Hi, I'm Ethan.<br>I'm an aspiring developer currently enrolled in the Web Development Track bootcamp at Bloc. So far, I've gained valuable experience in HTML, CSS, and Javascript.
-        <br><br>Coding was always a passionate hobby for me, I used to stay up late working with friends on building mods for video games using langauges like Lua.
-        <br>I started to realize how much I enjoyed the problem solving and the satisfaction of building something from that ground up which coding offered.
-        <br>I constantly have new ideas for applications or mods and being able to take those abstract ideas and make it into something real is what I truly love about coding.
-        <br><br>I'm always looking for new opportunities and am eager to work with a team on any developer project, whether it's web development or design, software development or even creating a mod as a side project.
-        <br><br>Besides coding, I also love getting outdoors and staying active, or getting distracted by my favorite sports teams (even though they usually disappoint). 
-        <br>I consider myself an action-oriented person so when I'm not coding or working, I'm staying active, cleaning, cooking or doing whatever else needs to get done.
-        <br><br>Feel free to contact me about development opportunities, or if you're just looking for a collaborator on a side project!
-        <br><br><a href="mailto:ethankieser@gmail.com">Contact Me</a></p>
+        <nav id="btn-nav">
+            <a href="#about-me"><button id="js-show-about">About Me</button></a>
+            <a href="#projects-page"><button id="js-show-projects">Projects</button></a>
+            <a href="#contact-page"><button id="js-show-contact">Contact</button></a>
+        </nav>
     </main>
-    <section role="complementary" id="projects-page">
-        <h2 id="project-title">Projects</h2>
-        <div id="history-quiz" class="hide">
-            <h3>US History Quiz</h3>
-            <div role="img" class="gallery">
-                <a target="_blank" href="images/port-quiz1.png">
-                  <img class="screenshot" src="images/port-quiz1.png" alt="Quiz starting page">
-                </a>
+    <section role="complementary" id="about-me" class="hide">
+        <h2 id="aboutme-title">About Me</h3>
+        <div id="about">Hi, I'm Ethan.<br>I'm an aspiring developer currently enrolled in the Web Development Track bootcamp at Bloc. So far, I've gained valuable experience in techs including but not limited to:
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>JQuery</li>
+            </ul>
+            Coding started as a hobby for me, and I immediately fell in love with the problem solving and the satisfaction from building something from the ground up. 
+            <br><br>I have professional frontend experience including updates to an existing website for a local medical practice and creating a contact form for their users.
+            <br><br>I'm always looking for new opportunities and am eager to work with a team on any development project, whether it's web development or design, software development or even creating a mod as a side project.
+            <br><br>Feel free to contact me about development opportunities, or if you're just looking for a collaborator on a side project!
+            <div id="s-logos-full">
+                <a href="mailto:ethankieser@gmail.com"><img class="social-logos" src="images/email-logo.png"></a>
+                <a href="https://discordapp.com/channels/@ekieser#6732" target="_blank"><img class="social-logos" src="images/discord-logo1.png"></a>
+                <a href="https://www.linkedin.com/in/ethan-kieser-b76001134/" target="_blank"><img class="social-logos" src="images/linkedin-logo.png"></a>
+                <a href="https://github.com/ekieser" target="_blank"><img class="social-logos" src="images/github-logo1.png"></a>
             </div>
-            <p>-A small quiz application I made for my development course.</p>
-            <p>-HTML, CSS, Javascript and JQuery</p>
-            <a href="https://ekieser.github.io/US-History-Quiz/" target="_blank"><p>Link to live site</p></a>
-            <a href="https://github.com/ekieser/US-History-Quiz" target="_blank"><p>Link to Github repository</p></a>
         </div>
     </section>
-    <footer class="bottom-contact">
-        <a href="mailto:ethankieser@gmail.com"><p>Contact</p></a> 
+    <section role="complementary" id="projects-page" class="hide">
+        <h2 id="project-title">Projects</h2>
+        <div id="all-projects">
+            <div id="history-quiz">
+                <h3>US History Quiz</h3>
+                <div role="img" class="gallery">
+                    <a target="_blank" href="images/port-quiz1.png"><img class="screenshot" src="images/port-quiz1.png" alt="Quiz starting page"></a>
+                </div>
+                <p>Small quiz application based on US history</p>
+                <a href="https://ekieser.github.io/US-History-Quiz/" target="_blank"><p>Live site</p></a>
+                <a href="https://github.com/ekieser/US-History-Quiz" target="_blank"><p>Github repository</p></a>
+                <div class="code-logos">
+                    <div id="html-logo">HTML</div>
+                    <div id="css-logo">CSS</div>
+                    <div id="js-logo">Javascript</div>
+                </div>
+            </div>
+            <div id="brewery-api">
+                <h3>BrewCity Brewery Finder</h3>
+                <div role="img" class="gallery">
+                    <a target="_blank" href="images/screenshot-new-brewcity.png"><img class="screenshot" src="images/screenshot-new-brewcity.png" alt="Brew City home page"></a>
+                </div>
+                <p>Brewery locator application using Open Brewery DB</p>
+                <a href="https://ekieser.github.io/BrewCity/" target="_blank"><p>Live site</p></a>
+                <a href="https://github.com/ekieser/BrewCity" target="_blank"><p>Github repository</p></a>
+                <div class="code-logos">
+                    <div id="html-logo">HTML</div>
+                    <div id="css-logo">CSS</div>
+                    <div id="js-logo">JavaScript</div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <section role="complementary" id="contact-page" class="hide">
+        <h2 id="contact-title">Contact</h2>
+        <div id="all-contact">
+            <p>Feel free to reach out to me via email, discord, or LinkedIn!</p>
+            <a href="mailto:ethankieser@gmail.com"><img class="social-logos" src="images/email-logo.png"></a>
+            <a href="https://discordapp.com/channels/@ekieser#6732" target="_blank"><img class="social-logos" src="images/discord-logo1.png"></a>
+            <a href="https://www.linkedin.com/in/ethan-kieser-b76001134/" target="_blank"><img class="social-logos" src="images/linkedin-logo.png"></a>
+            <a href="https://github.com/ekieser" target="_blank"><img class="social-logos" src="images/github-logo1.png"></a>
+        </div>
+    </section>
+    <!---<footer class="bottom-contact">
+        <a href="mailto:ethankieser@gmail.com"><p>Email</p></a> 
         <a href="https://www.linkedin.com/in/ethan-kieser-b76001134/" target="_blank"><p>LinkedIn</p></a>
         <a href="https://github.com/ekieser" target="_blank"><p>Github</p></a>
-    </footer>
+    </footer>--->
+    <script
+	src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
