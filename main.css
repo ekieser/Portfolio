@@ -153,17 +153,10 @@ h3 {
 
 .personal {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 30px;
-    width: 45px;
-    height: 45px;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
     margin-right: 15px;
-}
-
-.personal {
-    transition: .2ms;
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
 }
 
 .code-logos {
@@ -194,6 +187,11 @@ h3 {
     color: black;
 }
 
+.explain {
+    text-align: left;
+    padding: 10px;
+}
+
 nav a {
     text-decoration: none;
 }
@@ -220,7 +218,7 @@ nav a {
     background-color: #2e2e2e;
 }
 
-#history-quiz, #brewery-api, #budget-tool {
+#history-quiz, #brewery-api, #budget-tool, #wordpress-port {
     text-align: center;
     font-size: 17px;
     border-radius: 7px;
@@ -234,7 +232,7 @@ nav a {
     padding: 16px 0;
 }
 
-#history-quiz:hover, #brewery-api:hover, #budget-tool:hover {
+#history-quiz:hover, #brewery-api:hover, #budget-tool:hover, #wordpress-port:hover {
     transition: .2ms;
     -ms-transform: scale(1.01);
     -webkit-transform: scale(1.01);
@@ -338,6 +336,7 @@ footer a:hover {
     #history-quiz, #brewery-api, #budget-tool {
         width: 300px;
         font-size: 18px;
+        flex-basis: auto;
     }
     #project-title, #contact-title {
         text-indent: 100px;
@@ -354,7 +353,7 @@ footer a:hover {
         flex-direction: row;
         justify-content: space-evenly;
     }
-    #all-projects {
+    #all-projects { 
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -408,8 +407,9 @@ footer a:hover {
         margin-left: auto;
     }
     .personal {
-        width: 36px;
-        height: 36px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50;
         margin-right: auto;
         margin-left: auto;
     }
@@ -448,7 +448,7 @@ footer a:hover {
         padding-bottom: 10px;
         padding-top: 18px;
     }
-    #history-quiz, #brewery-api, #budget-tool {
+    #history-quiz, #brewery-api, #budget-tool, #wordpress-port {
         font-size: 18px;
         width: 330px;
     }
